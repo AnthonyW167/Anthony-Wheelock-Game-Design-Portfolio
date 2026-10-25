@@ -16,6 +16,17 @@
       --line: #343a46;
       --max: 1120px;
     }
+        .project-image {
+      height: 220px;
+      overflow: hidden;
+    }
+    
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -117,7 +128,11 @@
         </div>
         <div class="projects">
           <article class="card">
-            <div class="art green"><span>Unity · Procedural Tools</span></div>
+            <div class="project-image">
+              <img
+                src="Terrain%20Generation%201.png"
+                alt="Procedural terrain generated using my Unity terrain tool.">
+            </div>
             <div class="card-content">
               <h3>Procedural Terrain Generation Tool</h3>
               <p>A custom Unity tool that auto-generates terrain to speed up level prototyping and gameplay iteration, allowing me to focus on refining mechanics and player experience.</p>
